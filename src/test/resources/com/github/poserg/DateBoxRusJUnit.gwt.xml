@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="DateBoxRus">
+  <!-- Inherit our applications main module.                      -->
+  <inherits name='com.github.poserg.DateBoxRus' />
+
+  <!-- Specify the path to any remote services.                   -->
+  <servlet path="/DateBoxRus/greet" class="com.github.poserg.server.GreetingServiceImpl" />
+
+</module>
