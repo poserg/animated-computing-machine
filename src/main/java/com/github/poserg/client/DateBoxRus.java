@@ -16,6 +16,7 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
+import com.google.gwt.user.datepicker.client.DatePicker;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -145,5 +146,8 @@ public class DateBoxRus implements EntryPoint {
     MyHandler handler = new MyHandler();
     sendButton.addClickHandler(handler);
     nameField.addKeyUpHandler(handler);
+
+    DatePicker dp = new DatePicker();
+    RootPanel.get().add(dp);
   }
 }
